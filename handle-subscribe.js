@@ -34,7 +34,7 @@ $(document).ready(function() {
         //var redirectUrl = 'success-page.html';
         var redirectUrl = 'index.html';
         // show the loading 
-        $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+        $('#postForm').prepend($('<span></span>');
         var jqxhr = $.post(url, $form.serialize(), function(data) {
             console.log("Success! Data: " + data.statusText);
             $(location).attr('href',redirectUrl);
