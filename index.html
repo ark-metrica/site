@@ -1,255 +1,481 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ark Metrica Ltd.</title>
+    <link rel="icon" href="/static/favicon.svg" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script defer src="/static/js/alpine.js"></script>
+    <!-- <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style> -->
+  </head>
+  <body class="min-h-dvh flex flex-col bg-base-200" data-theme="dark">
+    <!-- Navbar -->
+    <header class="bg-base-100 border-b sticky top-0 z-40">
 
-<head>
+<div class="container mx-auto max-w-screen-xl px-4">
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-64 p-2 shadow"
+        >
+              <li>
+                <details>
+                  <summary class="capitalize">
+                    components
+                  </summary>
+                  <ul class="p-2">
+                      <li>
+                        <a href="/products/components/contact-checker/"
+                          >Contact checker</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/components/environment-chambers/"
+                          >Environment chambers</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/components/motorised-translation-stage/"
+                          >Motorised translation stage</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/components/multiplexor/"
+                          >Multiplexor</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/components/sample-holder/"
+                          >Sample holder</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/components/source-measure-unit/"
+                          >Source measure unit</a
+                        >
+                      </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="capitalize">
+                    consumables
+                  </summary>
+                  <ul class="p-2">
+                      <li>
+                        <a href="/products/consumables/tco-glass/"
+                          >TCO glass</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/consumables/masks/"
+                          >Masks</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/products/consumables/scratching-tool/"
+                          >Scratching tool</a
+                        >
+                      </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="capitalize">
+                    software
+                  </summary>
+                  <ul class="p-2">
+                      <li>
+                        <a href="/products/software/pv-characterisation/"
+                          >Solar cell characterisation software</a
+                        >
+                      </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary class="capitalize">
+                    systems
+                  </summary>
+                  <ul class="p-2">
+                      <li>
+                        <a href="/products/systems/automated-pv-measurement-system/"
+                          >Automated solar cell measurement system</a
+                        >
+                      </li>
+                  </ul>
+                </details>
+              </li>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="company spash page">
-  <meta name="author" content="grey">
-
-  <title>Ark Metrica - Solving problems one measurement at a time</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- BootstrapValidator JS -->
-  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-  
-  <!-- Custom styles for this template -->
-  <link href="css/grayscale.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Return to top</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-<!-- no project nav button start
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-no project nav button end -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Sign up</a>
-          </li>
+          <li class="mt-2"><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <object style="padding-top: 70px;" type="image/svg+xml" data="img/text.svg">Ark Metrica</object>
-        <!--<h1 class="mx-auto my-0 text-uppercase">Ark Metrica</h1>-->
-        <h2 class="text-white-50 mx-auto mt-0 mb-5">A measurement technology company</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
-      </div>
+      <a href="/">
+        <img
+          src="/static/img/logo-white-accent.svg"
+          class="!h-6 !w-auto !max-w-none block shrink-0"
+          alt="Home"
+        />
+      </a>
     </div>
-  </header>
 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4"><a href="#contact">Contact Us</a></h2>
-          <p class="text-white-50">to learn about what we can do for you today.</p>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 items-center">
+            <li x-data>
+              <details
+                x-ref="dropdown"
+                @click.outside="$refs.dropdown.open = false"
+                @keydown.escape.window="$refs.dropdown.open = false"
+                class="relative group"
+              >
+                <summary class="rounded-xl capitalize">
+                  components
+                  <span class="text-xs opacity-70"></span>
+                </summary>
+                <ul
+                  class="absolute top-full z-50 p-2 shadow-lg bg-base-100 rounded-box w-64"
+                >
+                    <li>
+                      <a href="/products/components/contact-checker/" tabindex="0"
+                        >Contact checker</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/components/environment-chambers/" tabindex="0"
+                        >Environment chambers</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/components/motorised-translation-stage/" tabindex="0"
+                        >Motorised translation stage</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/components/multiplexor/" tabindex="0"
+                        >Multiplexor</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/components/sample-holder/" tabindex="0"
+                        >Sample holder</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/components/source-measure-unit/" tabindex="0"
+                        >Source measure unit</a
+                      >
+                    </li>
+                </ul>
+              </details>
+            </li>
+            <li x-data>
+              <details
+                x-ref="dropdown"
+                @click.outside="$refs.dropdown.open = false"
+                @keydown.escape.window="$refs.dropdown.open = false"
+                class="relative group"
+              >
+                <summary class="rounded-xl capitalize">
+                  consumables
+                  <span class="text-xs opacity-70"></span>
+                </summary>
+                <ul
+                  class="absolute top-full z-50 p-2 shadow-lg bg-base-100 rounded-box w-64"
+                >
+                    <li>
+                      <a href="/products/consumables/tco-glass/" tabindex="0"
+                        >TCO glass</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/consumables/masks/" tabindex="0"
+                        >Masks</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/products/consumables/scratching-tool/" tabindex="0"
+                        >Scratching tool</a
+                      >
+                    </li>
+                </ul>
+              </details>
+            </li>
+            <li x-data>
+              <details
+                x-ref="dropdown"
+                @click.outside="$refs.dropdown.open = false"
+                @keydown.escape.window="$refs.dropdown.open = false"
+                class="relative group"
+              >
+                <summary class="rounded-xl capitalize">
+                  software
+                  <span class="text-xs opacity-70"></span>
+                </summary>
+                <ul
+                  class="absolute top-full z-50 p-2 shadow-lg bg-base-100 rounded-box w-64"
+                >
+                    <li>
+                      <a href="/products/software/pv-characterisation/" tabindex="0"
+                        >Solar cell characterisation software</a
+                      >
+                    </li>
+                </ul>
+              </details>
+            </li>
+            <li x-data>
+              <details
+                x-ref="dropdown"
+                @click.outside="$refs.dropdown.open = false"
+                @keydown.escape.window="$refs.dropdown.open = false"
+                class="relative group"
+              >
+                <summary class="rounded-xl capitalize">
+                  systems
+                  <span class="text-xs opacity-70"></span>
+                </summary>
+                <ul
+                  class="absolute top-full z-50 p-2 shadow-lg bg-base-100 rounded-box w-64"
+                >
+                    <li>
+                      <a href="/products/systems/automated-pv-measurement-system/" tabindex="0"
+                        >Automated solar cell measurement system</a
+                      >
+                    </li>
+                </ul>
+              </details>
+            </li>
+        <li>
+          <a
+            href="/about/"
+            class="capitalize rounded-xl"
+            tabindex="0"
+            >About</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-end">
+      <a class="btn btn-primary" href="/contact/" tabindex="0"
+        >Contact</a
+      >
+    </div>
+  </div>
+</div>    </header>
+
+    <!-- Main content -->
+    <main class="flex-1">  <div class="container mx-auto max-w-screen-xl px-4 py-20">
+    <div class="hero bg-base-200 min-h-full py-24">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl">
+          <h1
+            class="text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+          >
+            Laboratory Automation
+          </h1>
+          <p class="text-xl py-10">
+            Accelerating discovery and innovation in solar cell research
+          </p>
+          <a href="#features" class="btn btn-primary">Learn more</a>
         </div>
       </div>
-      <img src="img/pcb.png" class="img-fluid" alt="">
+    </div>
+  </div>
+
+  <section
+    data-theme="light"
+    id="features"
+    class="bg-base-100 text-base-content"
+  >
+    <div class="container mx-auto max-w-screen-xl px-4 py-20">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">Products</h2>
+      <div class="grid gap-8 md:grid-cols-4">
+        <div class="card bg-base-200 shadow">
+          <div class="p-8 flex flex-col justify-start h-full">
+            <h3 class="card-title">Components</h3>
+            <p class="mb-4">Hardware building blocks for automated systems.</p>
+            <ul class="p-2 font-bold space-y-4">
+                <li>
+                  <a href="/products/components/contact-checker/"
+                    >Contact checker</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/components/environment-chambers/"
+                    >Environment chambers</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/components/motorised-translation-stage/"
+                    >Motorised translation stage</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/components/multiplexor/"
+                    >Multiplexor</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/components/sample-holder/"
+                    >Sample holder</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/components/source-measure-unit/"
+                    >Source measure unit</a
+                  >
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 shadow">
+          <div class="p-8 flex flex-col justify-start h-full">
+            <h3 class="card-title">Consumables</h3>
+            <p class="mb-4">Extras that keep the lab running smoothly.</p>
+            <ul class="p-2 font-bold space-y-4">
+                <li>
+                  <a href="/products/consumables/tco-glass/"
+                    >TCO glass</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/consumables/masks/"
+                    >Masks</a
+                  >
+                </li>
+                <li>
+                  <a href="/products/consumables/scratching-tool/"
+                    >Scratching tool</a
+                  >
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 shadow">
+          <div class="p-8 flex flex-col justify-start h-full">
+            <h3 class="card-title">Software</h3>
+            <p class="mb-4">Automate long running experiments.</p>
+            <ul class="p-2 font-bold space-y-4">
+                <li>
+                  <a href="/products/software/pv-characterisation/"
+                    >Solar cell characterisation software</a
+                  >
+                </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card bg-base-200 shadow">
+          <div class="p-8 flex flex-col justify-start h-full">
+            <h3 class="card-title">Systems</h3>
+            <p class="mb-4">
+              Hardware and software combined for turn-key automated experiments,
+              built to your specification.
+            </p>
+            <ul class="p-2 font-bold space-y-4">
+                <li>
+                  <a href="/products/systems/automated-pv-measurement-system/"
+                    >Automated solar cell measurement system</a
+                  >
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-<!-- no projects A start
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-no projects A end-->
-      <!-- Featured Project Row -->
-<!-- no featured project start
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-          </div>
-        </div>
-      </div>
-no featured project end -->
-
-      <!-- Project One Row -->
-<!-- no project 1 start
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-no project 1 end-->
-  
-
-      <!-- Project Two Row -->
-<!-- no project 2 start
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-no project 2 end-->
-<!-- no projects B start
-    </div>
-  </section>
-no projects B end -->
-
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-          <form class="form-inline d-flex" id="email-form">
-            <input type="email" name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" id="postForm" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
-
-        </div>
-      </div>
+  <section
+    data-theme="light"
+    id="contact"
+    class="bg-base-300 text-base-content"
+  >
+    <div class="container mx-auto max-w-prose px-4 py-20 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Customisation</h2>
+      <p class="text-lg leading-relaxed mb-4">Every lab is different.</p>
+      <p class="text-lg leading-relaxed mb-4">
+        We offer mechanical, electrical, and software design services to make
+        components and systems that meet your requirements.
+      </p>
+      <p class="text-lg leading-relaxed">
+        <a href="/contact/" tabindex="0" class="font-bold"
+          >Contact us</a
+        >
+        to tell us more about your project.
+      </p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section bg-black">
-    <div class="container">
-      <div class="row justify-content-around">
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Location</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="https://www.google.com/maps/place/Oxford,+England" target="_blank">Oxford, United Kingdom</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="mailto:info@arkmetrica.com">info@arkmetrica.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-<!-- no phone contact start
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
-            </div>
-          </div>
-        </div>
-no phone contact end -->
-      </div>
-      
-<!-- no social media start
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-no social media end -->
-
+  <section data-theme="light" id="contact" class="bg-accent text-base-content">
+    <div
+      class="container mx-auto max-w-screen-xl px-4 py-20 text-center font-bold"
+    >
+      <h2 class="text-4xl md:text-5xl mb-6">Get in touch!</h2>
+      <p class="text-2xl leading-relaxed">
+        <a href="mailto:info@arkmetrica.com">info@arkmetrica.com</a>
+      </p>
     </div>
   </section>
+</main>
 
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      Copyright &copy; Ark Metrica LTD 2025<br>
-      ARK METRICA LTD was incorporated on 30 September 2019 in the UK as company number 12234750<br>
-      EORI: GB340915317000<br>
-      VAT: 340 9153 17<br>
-      PIC: 891323495
+    <!-- Footer -->
+<footer
+  class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4"
+>
+  <aside>
+    <p>Copyright ©  Ark Metrica Ltd. All rights reserved.</p>
+    <div class="mt-4 text-sm sm:text-base">
+      <ul
+        class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5 gap-y-2"
+      >
+        <li class="whitespace-nowrap">ARK METRICA LTD.</li>
+        <li class="hidden sm:list-item text-base-content/50">|</li>
+
+        <li class="whitespace-nowrap">Oxford, United Kingdom</li>
+        <li class="hidden sm:list-item text-base-content/50">|</li>
+
+        <li class="whitespace-nowrap">Company number: 12234750</li>
+        <li class="hidden sm:list-item text-base-content/50">|</li>
+
+        <li class="whitespace-nowrap">EORI: GB340915317000</li>
+        <li class="hidden sm:list-item text-base-content/50">|</li>
+
+        <li class="whitespace-nowrap">VAT: 340 9153 17</li>
+        <li class="hidden sm:list-item text-base-content/50">|</li>
+
+        <li class="whitespace-nowrap">PIC: 891323495</li>
+      </ul>
     </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
-  
-  <!-- Handle subscribe -->
-  <script src="handle-subscribe.js"></script>
-
-</body>
-
+  </aside>
+</footer>  </body>
 </html>

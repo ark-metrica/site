@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="11.348786"
+     inkscape:cx="43.572943"
+     inkscape:cy="30.752188"
+     inkscape:window-width="3440"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#1e293b;fill-opacity:1;stroke-width:0.337556"
+       id="rect1"
+       width="16.933332"
+       height="16.933332"
+       x="-0.0075396849"
+       y="0"
+       rx="2.6316025"
+       ry="2.4662898" />
+    <path
+       id="path858"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:15.1694px;line-height:125%;font-family:'Questa Slab';-inkscape-font-specification:'Questa Slab Heavy';letter-spacing:0px;word-spacing:0px;fill:#00d3bb;fill-opacity:1;stroke:none;stroke-width:0.192824px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 6.5463752,12.120434 H 9.8850689 V 10.838019 H 9.1443652 V 6.8470635 l 1.8241208,5.2733705 h 0.994975 l 1.835176,-5.3065303 v 4.0241153 h -0.740704 v 1.282415 h 3.338694 v -1.282415 h -0.79598 V 6.0953063 h 0.79598 V 4.8128982 H 12.958436 L 11.510195,9.0581196 10.050898,4.8128982 H 6.5463752 V 6.0953063 H 7.3423551 V 10.838019 H 6.5463752 Z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path852"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:15.1694px;line-height:125%;font-family:'Questa Slab';-inkscape-font-specification:'Questa Slab Heavy';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.192824px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0.52162635,12.120434 H 3.3959979 V 10.838019 H 2.6995154 L 2.9427317,10.108373 H 5.2864502 L 5.562832,10.838019 H 4.8774053 v 1.282415 H 7.9286615 V 10.838019 H 7.3537869 L 4.9547921,4.8128982 H 3.2522798 L 1.085445,10.838019 H 0.52162635 Z M 3.3517766,8.8259576 4.0372041,6.6038531 4.822129,8.8259576 Z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

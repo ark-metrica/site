@@ -1,0 +1,15 @@
+@import "tailwindcss" source(none);
+
+/* point to real files relative to THIS css file */
+@source "../../templates/**/*.html";
+@source "../../../content/**/*.md";
+
+@source "../../templates/**/*.jinja";
+@source "../../templates/**/*.jinja2";
+@source "../../templates/**/*.j2";
+
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui" {
+  themes: light, dark;
+}
